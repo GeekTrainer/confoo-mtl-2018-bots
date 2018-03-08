@@ -1,0 +1,64 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "confoo-ragnar",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "lost-runner"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "location"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "lost a runner",
+      "intent": "lost-runner",
+      "entities": []
+    },
+    {
+      "text": "seattle",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "we lost our runner",
+      "intent": "lost-runner",
+      "entities": []
+    },
+    {
+      "text": "we lost our runner near bellevue",
+      "intent": "lost-runner",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "we lost our runner near seattle",
+      "intent": "lost-runner",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 24,
+          "endPos": 30
+        }
+      ]
+    }
+  ]
+}
